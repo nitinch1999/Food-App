@@ -1,0 +1,504 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav
+{
+    background-color: crimson;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo
+{
+    padding: 15px 15px;
+    letter-spacing: 1px;
+    font-size: 40;
+    cursor: pointer;
+    margin-left: 38%;
+    color: black;
+    
+}
+
+.navlinks
+{
+    float: right;
+    padding-right: 20px;
+    cursor: pointer;
+}
+.navlinks ul li{
+    display: inline-block;
+    padding-right: 18px;
+    cursor: pointer;
+}
+
+.navlinks ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 17;
+    cursor: pointer;
+    text-transform: uppercase;
+
+}
+
+.navborder::after
+{
+    content:"";
+    width: 0;
+    height: 2px;
+    display: block;
+    background-color: rgb(231, 231, 231);
+    transition: width .5s ease-in;
+    
+}
+
+.navborder:hover::after{
+    width: 100px;
+}
+
+.container
+{
+    background-image: linear-gradient(to top,rgba(145, 146, 122, 0),rgba(145,146,122,1)),url("background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    height: 700px;
+    text-align: center;
+}
+
+.container h1{
+    padding-top:20px;
+    color: white;
+    font-size: 90;
+}
+
+.container p{
+    color: white;
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+.order{
+    background-color: crimson;
+    padding: 10px 10px;
+    border: none;
+    font-size: 15;
+    border-radius: 3px;
+    margin-top: 60px;
+    transition: 0.2s ease;
+}
+
+.order a{
+    text-decoration: none;
+    color: white;
+}
+
+.order:hover{
+    padding: 15px 15px;
+}
+
+.container2
+{
+      margin: 30px 20px;
+      border: 2px solid rgb(160, 46, 68);  
+      padding-bottom: 150px;
+
+}
+
+.container2 h1
+{
+    text-align: center;
+    margin-top: 15px;
+    padding-top: 15px;
+    color: black;
+
+}
+.firstrow
+{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.firstrow h2
+{
+    color: rgb(10, 8, 9);
+}
+
+.Dish1,.Dish2,.Dish3{
+    border: 1.5px solid rgb(190, 189, 189);
+    padding: 10px 15px;
+    text-align: center;
+    
+}
+
+.firstrow ul li{
+    list-style-type: none;
+    line-height: 30px;
+    font-size: 20px;
+    padding-top: -20%;
+
+}
+
+.container2 .secondrow
+{
+    text-align: center;
+    margin-top: 15px;
+    padding-top: 15px;
+    color: black;
+}
+
+
+.secondrow
+{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.secondrow h2
+{
+    color: rgb(10, 8, 9);
+}
+
+.Dish4,.Dish5,.Dish6{
+    border: 1.5px rgb(190, 189, 189);
+    padding: 10px 15px;
+    text-align: center;
+}
+
+.secondrow ul li{
+    list-style-type: none;
+    line-height: 30px;
+    font-size: 20px;
+    padding-top: -20%;
+}
+
+.Dish1 img{
+    -webkit-transform: blur(2px);
+	transform: blur(2px);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.Dish1:hover img{
+	-webkit-transform: scale(1.2);
+	filter: scale(1.2);
+}
+
+.Dish2 img{
+    -webkit-transform: blur(2px);
+	transform: blur(2px);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.Dish2:hover img{
+	-webkit-transform: scale(1.2);
+	filter: scale(1.2);
+}
+
+.Dish3 img{
+    -webkit-transform: blur(2px);
+	transform: blur(2px);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.Dish3:hover img{
+	-webkit-transform: scale(1.2);
+	filter: scale(1.2);
+}
+
+.Dish4 img{
+    -webkit-transform: blur(2px);
+	transform: blur(2px);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.Dish4:hover img{
+	-webkit-transform: scale(1.2);
+	filter: scale(1.2);
+}
+
+.Dish5 img{
+    -webkit-transform: blur(2px);
+	transform: blur(2px);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.Dish5:hover img{
+	-webkit-transform: scale(1.2);
+	filter: scale(1.2);
+}
+
+.Dish6 img{
+    -webkit-transform: blur(2px);
+	transform: blur(2px);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.Dish6:hover img{
+	-webkit-transform: scale(1.2);
+	filter: scale(1.2);
+}
+
+.Dish1,.Dish2,.Dish3,.Dish4,.Dish5,.Dish5,.Dish6,.ul li{
+        background-color: rgba(200, 160, 160, 0.400);
+}
+
+.Dish1 button.buy
+{
+    background-color: rgba(116, 188, 116, 0.844);
+    font-size: 15px;
+    color: white;
+    border-radius: 20px;
+}
+
+.Dish1 button.buy:hover{
+    width: 120px;
+    transition: width .5s ease-in;
+} 
+
+.Dish2 button.buy
+{
+    background-color: rgba(116, 188, 116, 0.844);
+    font-size: 15px;
+    color: white;
+    border-radius: 20px;
+}
+
+.Dish2 button.buy:hover{
+    width: 120px;
+    transition: width .5s ease-in;
+}    
+
+.Dish3 button.buy
+{
+    background-color: rgba(116, 188, 116, 0.844);
+    font-size: 15px;
+    color: white;
+    border-radius: 20px;
+}
+
+.Dish3 button.buy:hover{
+    width: 120px;
+    transition: width .5s ease-in;
+
+}
+
+.Dish4 button.buy
+{
+    background-color: rgba(116, 188, 116, 0.844);
+    font-size: 15px;
+    color: white;
+    border-radius: 20px;
+}
+
+.Dish4 button.buy:hover{
+    width: 120px;
+    transition: width .5s ease-in;
+}
+
+.Dish5 button.buy
+{
+    background-color: rgba(116, 188, 116, 0.844);
+    font-size: 15px;
+    color: white;
+    border-radius: 20px;
+}
+
+.Dish5 button.buy:hover{
+    width: 120px;
+    transition: width .5s ease-in;
+
+}
+
+.Dish6 button.buy
+{
+    background-color: rgba(116, 188, 116, 0.844);
+    font-size: 15px;
+    color: white;
+    border-radius: 20px;
+}
+
+
+.Dish6 button.buy:hover{
+    width: 120px;
+    transition: width .5s ease-in;
+}    
+
+.Dish1 button.cart
+{
+    background-color: rgba(230, 102, 102, 0.789);
+    font-size: 15px;
+    color: white;
+    border-radius: 20px;
+}
+
+.Dish1 button.cart:hover{
+    width: 120px;
+    transition: width .5s ease-in;
+} 
+
+.Dish2 button.cart
+{
+    background-color: rgba(230, 102, 102, 0.789);
+    font-size: 15px;
+    color: white;
+    border-radius: 20px;
+}
+
+.Dish2 button.cart:hover{
+    width: 120px;
+    transition: width .5s ease-in;
+} 
+
+.Dish3 button.cart
+{
+    background-color: rgba(230, 102, 102, 0.789);
+    font-size: 15px;
+    color: white;
+    border-radius: 20px;
+}
+
+.Dish3 button.cart:hover{
+    width: 120px;
+    transition: width .5s ease-in;
+} 
+
+.Dish4 button.cart
+{
+    background-color: rgba(230, 102, 102, 0.789);
+    font-size: 15px;
+    color: white;
+    border-radius: 20px;
+}
+
+.Dish4 button.cart:hover{
+    width: 120px;
+    transition: width .5s ease-in;
+} 
+
+.Dish5 button.cart
+{
+    background-color: rgba(230, 102, 102, 0.789);
+    font-size: 15px;
+    color: white;
+    border-radius: 20px;
+}
+
+.Dish5 button.cart:hover{
+    width: 120px;
+    transition: width .5s ease-in;
+} 
+.Dish6 button.cart
+{
+    background-color: rgba(230, 102, 102, 0.789);
+    font-size: 15px;
+    color: white;
+    border-radius: 20px;
+}
+
+.Dish6 button.cart:hover{
+    width: 120px;
+    transition: width .5s ease-in;
+} 
+
+.contact
+{
+    border: crimson;
+    margin: 30px 200px;
+    text-align: center;
+}
+
+.contact h1{
+    padding-top: 60px;
+    color: crimson;
+    margin-top: 40px;
+    margin: -15px;
+}
+
+.form
+{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin-top: -10px;
+    margin-bottom: 50px;
+    padding: 50px;
+}
+
+input[type=text]{
+    margin: 10px auto 30px auto;
+    width: 400px;
+    padding: 7px 5px;
+    border: 2px solid crimson;
+    border-radius: 3px;
+
+}
+
+input[type=number]{
+    margin: 10px auto 30px auto;
+    width: 400px;
+    padding: 7px 5px;
+    border: 2px solid crimson;
+    border-radius: 3px;
+
+}
+
+input[type=email]{
+    margin: 10px auto 30px auto;
+    width: 400px;
+    padding: 7px 5px;
+    border: 2px solid crimson;
+    border-radius: 3px;
+
+}
+
+input[type=text]{
+    margin: 10px auto 30px auto;
+    width: 400px;
+    padding: 7px 5px;
+    border: 2px solid crimson;
+    border-radius: 3px;
+
+}
+
+.form textarea{
+    margin: 10px auto 30px auto;
+    width: 400px;
+    height: 250px;
+    padding: 7px 5px;
+    border: 2px solid crimson;
+    border-radius: 3px;
+}
+
+.query
+{
+    padding: 10px;
+    background-color: crimson;
+    border: none;
+    border-radius: 30px;
+    transition: .2 s ease;
+
+}
+
+.query a{
+    color: white;
+    text-decoration: none;
+
+}
+
+.query :hover{
+    background-color: rgba(178,  28, 52);
+}
